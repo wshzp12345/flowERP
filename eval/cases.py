@@ -465,3 +465,10 @@ def bank_statement_control_and_reconciliation() -> str:
         return "不平对账单被阻断，银行流水自动匹配收付款后与银行存款总账余额一致"
     finally:
         tmp.cleanup()
+
+
+from eval.l08_personal_cases import (
+    l08_sales_two_line_success,
+    l08_sales_second_line_shortage,
+    l08_sales_second_write_rollback,
+)
